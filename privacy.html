@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Política de privacidad | Verso for phpMyAdmin</title>
+
+    <meta name="description"
+          content="Política de privacidad de Verso for phpMyAdmin. Consulta cómo se gestionan los datos, las preferencias y los permisos de la extensión.">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        :root {
+            color-scheme: dark;
+            --background: #0b1020;
+            --surface: #121a2b;
+            --border: #27344b;
+            --text: #e8edf7;
+            --muted: #a5b2c8;
+            --accent: #60a5fa;
+            --accent-soft: #172b49;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 48px 20px;
+            background: var(--background);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.75;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 36px;
+            margin-bottom: 28px;
+            background: linear-gradient(135deg, #16243c, #111827);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+        }
+
+        .brand {
+            margin: 0 0 12px;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: clamp(30px, 5vw, 42px);
+            line-height: 1.2;
+        }
+
+        .updated {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .intro {
+            margin-top: 24px;
+            color: var(--muted);
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 28px 32px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            font-size: 21px;
+            line-height: 1.4;
+        }
+
+        p {
+            margin: 0 0 14px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            padding: 3px 6px;
+            background: #0b1220;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            font-size: 0.9em;
+            overflow-wrap: anywhere;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .notice {
+            padding: 18px 20px;
+            background: var(--accent-soft);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+        }
+
+        footer {
+            padding: 24px 12px;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 14px;
+            }
+
+            header {
+                padding: 26px 22px;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <p class="brand">Verso</p>
+
+            <h1>Política de privacidad</h1>
+
+            <p class="updated">
+                Verso for phpMyAdmin
+                &middot;
+                Última actualización: 14 de octubre de 2026
+            </p>
+
+            <p class="intro">
+                Esta política explica cómo Verso for phpMyAdmin gestiona
+                la información, almacena las preferencias del usuario
+                y utiliza los permisos del navegador.
+            </p>
+        </header>
+
+        <section>
+            <h2>1. Recopilación de datos</h2>
+
+            <p>
+                Verso for phpMyAdmin no recopila, transmite ni comparte
+                con el desarrollador o servidores externos datos personales,
+                historial de navegación, contenido de bases de datos ni
+                otra información del usuario.
+            </p>
+
+            <p>
+                La extensión modifica la interfaz de phpMyAdmin para
+                ofrecer opciones de personalización visual y herramientas
+                de productividad. El acceso a una página compatible para
+                proporcionar estas funciones no implica, por sí mismo,
+                que su contenido sea recopilado o transmitido.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Almacenamiento de datos y preferencias</h2>
+
+            <p>
+                La extensión almacena preferencias de configuración,
+                como el tema seleccionado, la densidad de la interfaz,
+                las preferencias tipográficas, las etiquetas de servidores
+                y otras opciones de personalización.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Almacenamiento local:</strong>
+                    las preferencias guardadas mediante
+                    <code>chrome.storage.local</code>
+                    permanecen en el dispositivo del usuario.
+                </li>
+
+                <li>
+                    <strong>Sincronización opcional de Chrome:</strong>
+                    si esta función está implementada y el usuario la
+                    habilita, las preferencias compatibles pueden
+                    sincronizarse mediante
+                    <code>chrome.storage.sync</code>
+                    y el perfil de Chrome del usuario.
+                </li>
+            </ul>
+
+            <p>
+                La extensión no utiliza estas preferencias para crear
+                perfiles publicitarios ni rastrear al usuario entre
+                diferentes sitios web.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Permisos del navegador</h2>
+
+            <p>
+                Verso for phpMyAdmin utiliza los permisos del navegador
+                únicamente en la medida necesaria para proporcionar
+                sus funcionalidades.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Storage:</strong>
+                    permite guardar los temas seleccionados, las
+                    preferencias de la interfaz, las etiquetas de
+                    servidores y otras configuraciones.
+                </li>
+
+                <li>
+                    <strong>Scripting:</strong>
+                    permite aplicar las personalizaciones de la interfaz
+                    y las funciones compatibles en las páginas de
+                    phpMyAdmin.
+                </li>
+
+                <li>
+                    <strong>ActiveTab:</strong>
+                    permite identificar o interactuar con la pestaña
+                    activa cuando el usuario utiliza las funciones
+                    correspondientes de la extensión.
+                </li>
+
+                <li>
+                    <strong>Permisos opcionales de sitios:</strong>
+                    si la versión instalada admite esta funcionalidad,
+                    permiten utilizar la extensión en un sitio para el
+                    que el usuario haya habilitado expresamente el acceso.
+                </li>
+            </ul>
+
+            <p>
+                Estos permisos no se utilizan para recopilar el historial
+                de navegación ni para transmitir contenido de bases de
+                datos al desarrollador.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Contenido de las bases de datos</h2>
+
+            <p>
+                Verso for phpMyAdmin está diseñada para mejorar la
+                interfaz de phpMyAdmin. La extensión no recopila ni
+                transmite intencionadamente al desarrollador o a
+                servidores externos registros de bases de datos,
+                contenido de consultas SQL, credenciales de acceso
+                u otra información de las bases de datos.
+            </p>
+
+            <p>
+                Los usuarios deben seguir aplicando las prácticas de
+                seguridad de su organización al utilizar herramientas
+                de administración de bases de datos.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Servicios de terceros</h2>
+
+            <p>
+                La extensión no utiliza servicios de terceros para
+                analítica, publicidad, rastreo o telemetría.
+            </p>
+
+            <p>
+                Si el usuario habilita la sincronización de Chrome,
+                la infraestructura de sincronización del navegador
+                puede procesar las preferencias compatibles de acuerdo
+                con las políticas aplicables de Google.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Compartición y venta de datos</h2>
+
+            <p>
+                El desarrollador no vende datos de los usuarios ni
+                los comparte con terceros para publicidad, elaboración
+                de perfiles o fines ajenos a las funcionalidades
+                de la extensión.
+            </p>
+
+            <p>
+                La extensión no está diseñada para transferir
+                información personal a servidores externos.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Código abierto y seguridad</h2>
+
+            <p>
+                El código fuente está disponible para su consulta
+                pública en el repositorio del proyecto en GitHub.
+            </p>
+
+            <p>
+                Los usuarios pueden revisar el código fuente para
+                comprender el funcionamiento de la extensión y cómo
+                gestiona las preferencias y los permisos del navegador.
+            </p>
+
+            <p>
+                La disponibilidad pública del código fuente no garantiza,
+                por sí sola, que todas las versiones distribuidas sean
+                idénticas al código publicado en el repositorio.
+            </p>
+
+            <p>
+                <a href="https://github.com/gasparcuew/Verso-for-phpMyAdmin"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Consultar el repositorio de Verso for phpMyAdmin
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Cambios en esta política</h2>
+
+            <p>
+                Esta política de privacidad puede actualizarse cuando
+                cambien las funcionalidades de la extensión, sus permisos
+                o los requisitos aplicables.
+            </p>
+
+            <p>
+                La fecha de la última actualización se mostrará al
+                principio de esta página.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Contacto</h2>
+
+            <p>
+                Si tienes preguntas sobre esta política de privacidad
+                o sobre el tratamiento de información por parte de
+                la extensión, puedes contactar con el desarrollador
+                abriendo una incidencia en el repositorio del proyecto.
+            </p>
+
+            <p>
+                <a href="https://github.com/gasparcuew/Verso-for-phpMyAdmin/issues"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Contactar con el desarrollador en GitHub
+                </a>
+            </p>
+        </section>
+
+        <footer>
+            &copy; 2026 Verso for phpMyAdmin.
+            Todos los derechos reservados.
+        </footer>
+
+    </main>
+</body>
+</html>
